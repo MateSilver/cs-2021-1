@@ -63,4 +63,4 @@ retorno será:
 ``` 
 e por ai vai. use os comando PUT e DELETE a exemplo deles.
 ## criando APIs
-Para criar API's precisamos ter conhecimento do protocolo HTTP, e linguagens de programação web, como o Python. Ainda assim podemos ainda precisar de JavaScript lidando com sites e outros recursos web. Sempre esbarramos em JavaScript. Precisamos antes mesmo de implementar a aplicação, é preciso saber quais dados voce quer captar e gerenciar. 
+Para criar API's precisamos ter conhecimento do protocolo HTTP, e linguagens de programação web, como o Python. Ainda assim podemos ainda precisar de JavaScript lidando com sites e outros recursos web. Sempre esbarramos em JavaScript. Precisamos antes mesmo de implementar a aplicação, é preciso saber quais dados voce quer captar e gerenciar. Podemos criar APIs usando frameworks como NextJS.
