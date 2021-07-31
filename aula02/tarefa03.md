@@ -46,18 +46,29 @@ Responda as questões abaixo (exercite os comandos do git correspondentes). Lemb
 11. Em alguns cenários **git log** pode produzir extensos resultados. Se houver interesse em visualizar o histórico de um repositório, onde cada mudança é fornecida exatamente em uma única linha, qual o comando que deve ser empregado?
   git log --pretty=oneline
 12. Em qual arquivo o Git armazena informações de configuração empregadas por usuário?
+  `.git/config`
 13. Qual o comando para criar um repositório local?
+  `git init`
 14. Qual o nome do diretório criado pelo Git quando se executa o comando **git init**?
+  `.git`
 15. Qual o comando para adicionar todos os arquivos modificados? (Aqueles para os quais **git status** identificam como **modified**?)
+  `git commit`
 16. O Git faz uso do valor de hash conhecido por SHA1. O que isto significa? Qual o propósito? O que é SHA1?
+  SHA1 é uma função de dispersão criptografia hash que criptografa os dados do repositorio padrão
 17. Qual a palavra para indicar o último _commit_ em vez do valor de hash SHA1 correspondente?
+  `git log -1`
 18. Quando se cria dois arquivos usando um editor de texto qualquer e, na sequência, executamos o comando **git add -u**, os dois arquivos criados passam de _untracked_ para _new file_?
+  Não, o comando -u faz a atualização dos arquivos já traqueados ou versionados
 19. Qual o efeito da execução dos dois comandos abaixo, nesta ordem, em um dado repositório?
 **git reset --soft HEAD~1**
 **git reset --hard**
+  desversiona todos os arquivos do repositorio, que ficam como "a commitar" e depois com reset --hard descarta todos os arquivos não traqueados
 20. Após o emprego de um ambiente integrado de desenvolvimento (IDE), é comum a criação de arquivos e diretórios. Qual o comando que podemos empregar para remover arquivos e diretórios _untracked_?
+  `git clean -f`
 21. Qual o nome do arquivo no qual podemos inserir a indicação para o Git de arquivos e diretórios a serem ignorados?
+  `gitignore`
 22. Quando se cria o arquivo _MinhaClasse.class_ em um dado diretório e desejamos que arquivos com a extensão .class, como neste caso, sejam ignorados por todos os membros de uma equipe que estão contribuindo com um dado projeto, como devemos proceder?
+  apenas adicione `*.class` no .gitignore
 23. jQuery é uma famosa biblioteca em JavaScript. Consulte detalhes em [jQuery](http://jquery.com). O repositório correspondente encontra-se em [gitRep](https://github.com/jquery/jquery.git). Faça o clone deste repositório.
 24. No repositório **jqueryrepo**, criado no passo anterior, qual o efeito do comando
 **git shortlog -sne**?
