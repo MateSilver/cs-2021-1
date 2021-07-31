@@ -43,7 +43,7 @@ Responda as questões abaixo (exercite os comandos do git correspondentes). Lemb
   ```
   i. git reset --hard
   ```
-  reseta o diretorio atual
+  reseta o commits realizados, passando a exibir apenas o último
   ```
   j. git log -27
   ```
@@ -51,7 +51,11 @@ Responda as questões abaixo (exercite os comandos do git correspondentes). Lemb
   ```
 3. O fluxo “clássico” de interação com o Git é algo como “alterar um ou mais arquivos”, “acrescentar essas mudanças para serem contemplados no próximo commit” e, finalmente, executar um “commit”. Quais os comandos necessários para realizar os dois últimos “passos” desse fluxo?
   ```
-  git add e git commit
+  git add 
+  git rm
+  git add
+  
+  git commit
   ```
 4. Qual o comando deve ser executado para identificar o que foi alterado desde o último “commit”?
   ```
@@ -63,7 +67,7 @@ Responda as questões abaixo (exercite os comandos do git correspondentes). Lemb
   ```
 6. Qual o comando para efetuar um _commit_?
   ```
-  git commit
+  git commit -m "comentario qualquer opcional"
   ```
 7. Qual o comando que devemos empregar para descartar mudanças ocorridas no arquivo teste.txt, por exemplo? 
   ```
@@ -75,7 +79,7 @@ Responda as questões abaixo (exercite os comandos do git correspondentes). Lemb
   ```
 9. O que acontece se o seu repositório local for acidentalmente removido?
   ```
-  faça um clone do repositório remoto
+  faça um clone do repositório remoto, esse nao será alterado
   ```
 10. Como clonar um repositório remoto?
   ```
@@ -103,11 +107,12 @@ Responda as questões abaixo (exercite os comandos do git correspondentes). Lemb
   ```
 16. O Git faz uso do valor de hash conhecido por SHA1. O que isto significa? Qual o propósito? O que é SHA1?
   ```
-  SHA1 é uma função de dispersão criptografia hash que criptografa os dados do repositorio padrão
+   Git tem um valor para verificação de integridade, calculado antes que seja armazenado e então passa a ser referenciado pelo mesmo. Isso significa que é impossível mudar o conteúdo de qualquer arquivo ou diretório sem que o Git saiba. O mecanismo que o Git usa para fazer o valor é chamado de hash SHA-1. O SHA-1 é uma string de 40 caracteres composta de caracteres hexadecimais (0-9 e a-f) que é calculado a partir do conteúdo de um arquivo ou estrutura de um diretório no Git. 
+
   ```
 17. Qual a palavra para indicar o último _commit_ em vez do valor de hash SHA1 correspondente?
   ```
-  git log -1
+  git log -1 para o ultimo commit e -abbrev-commit para o valor SHA1
   ```
 18. Quando se cria dois arquivos usando um editor de texto qualquer e, na sequência, executamos o comando **git add -u**, os dois arquivos criados passam de _untracked_ para _new file_?
   ```
@@ -117,7 +122,7 @@ Responda as questões abaixo (exercite os comandos do git correspondentes). Lemb
 **git reset --soft HEAD~1**
 **git reset --hard**
   ```
-  desversiona todos os arquivos do repositorio, que ficam como "a commitar" e depois com reset --hard descarta todos os arquivos não traqueados
+  desversiona todos os arquivos do repositorio, que ficam como "a commitar", desfazendo o ultimo commit e depois com reset --hard exibe o ultiom commit
   ```
 20. Após o emprego de um ambiente integrado de desenvolvimento (IDE), é comum a criação de arquivos e diretórios. Qual o comando que podemos empregar para remover arquivos e diretórios _untracked_?
   ```
@@ -163,15 +168,15 @@ Responda as questões abaixo (exercite os comandos do git correspondentes). Lemb
   ```
 31. Após executar um commit, qual o efeito de **git commit --amend**?
   ```
-  substitui o commit anterior e a mensagem do commit original é usada como ponto de partida, ao invés de uma mensagem vazia
+  substitui o commit anterior e a mensagem do commit novo é usada como a antiga, ao invés de uma mensagem vazia
   ```
 32. Após executar **git add x.txt**, qual o efeito de **git reset HEAD x.txt**?
   ```
-  Desfaz as alterações do arquivo x.txt commitadas
+  remove o arquivo x.txt da lista pra commmit
   ```
 33. Após alterar o conteúdo de um arquivo committed em passo anterior, qual o efeito do comando **git checkout -- a.txt**?
   ```
-  desfaz as alterações feitas na sua maquina mesmo antes do commit
+  desfaz as alterações feitas no arquivo na sua maquina mesmo antes do commit
   ```
 34. Qual a diferença entre os comandos **git reset HEAD a.txt** e **git checkout -- a.txt**?
   ```
