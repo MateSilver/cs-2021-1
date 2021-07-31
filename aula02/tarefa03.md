@@ -28,20 +28,23 @@ Responda as questões abaixo (exercite os comandos do git correspondentes). Lemb
   j. git log -27
   mostra os ultimos 27 commits
 3. O fluxo “clássico” de interação com o Git é algo como “alterar um ou mais arquivos”, “acrescentar essas mudanças para serem contemplados no próximo commit” e, finalmente, executar um “commit”. Quais os comandos necessários para realizar os dois últimos “passos” desse fluxo?
-  git add e git commit
+  `git add` e `git commit`
 4. Qual o comando deve ser executado para identificar o que foi alterado desde o último “commit”?
-  git diff
+  `git diff`
 5. Em um dado repositório, arquivos simplesmente copiados para lá, ou seja, _untracked_, podem ser exibidos/identificados com que comando?
-  git status -u
+  `git status -u`
 6. Qual o comando para efetuar um _commit_?
-  git commit -m "comentario"(opcional)
+  `git commit`
 7. Qual o comando que devemos empregar para descartar mudanças ocorridas no arquivo teste.txt, por exemplo? 
-  git teste.txt
+  `git reset teste.txt`
 8. O que deve ser feito para que um determinado diretório do seu repositório seja ignorado pelo Git? Faça uma busca por **.gitignore**.
   apenas adicione o nome do arquivo em gitignore
 9. O que acontece se o seu repositório local for acidentalmente removido?
+  faça um clone do repositório remoto
 10. Como clonar um repositório remoto?
+  `git clone <url>`
 11. Em alguns cenários **git log** pode produzir extensos resultados. Se houver interesse em visualizar o histórico de um repositório, onde cada mudança é fornecida exatamente em uma única linha, qual o comando que deve ser empregado?
+  git log --pretty=oneline
 12. Em qual arquivo o Git armazena informações de configuração empregadas por usuário?
 13. Qual o comando para criar um repositório local?
 14. Qual o nome do diretório criado pelo Git quando se executa o comando **git init**?
