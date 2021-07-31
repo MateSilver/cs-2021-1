@@ -16,12 +16,16 @@
 7. O que o comando **<code>git checkout -b</code>** nome faz?
   cria uma nova branch
 8. Qual a função do <code>**comando git branch -d teste</code>**?
+  exclui a branch atual
 9. Durante o desenvolvimento de um software é comum, por exemplo, utilizar um novo recurso por meio de experimentação. Talvez uma nova tecnologia, uma nova biblioteca que pode ser útil ao que está em desenvolvimento, ou até mesmo uma nova versão de um produto já empregado. Para que o uso deste novo recurso não interfira com o que é considerado pronto, um branch pode ser criado para a experimentação. Código que for criado para a experimentação existirá apenas no branch criado. Se eventualmente o experimento demonstrar um resultado satisfatório, as alterações realizadas no branch poderão ser incorporadas no que é considerado pronto, ou seja, no branch principal (master). Esta última ação é conhecida por merge. Neste item, crie uma sequência de comandos que simula um caso simples de criação e uso seguido de merge empregando um branch para ilustrar uma experimentação conforme acima. A sequência deve incluir, obrigatoriamente: (a) criação de um ou mais branches; (b) chaveamento para pelo menos dois branches e (c) merge.
-
-INSTRUÇÕES:
-
-1. No seu repositório pessoal, criar a pasta aula04.
-2. Commitar este arquivo respondido nesta pasta.
-3. A data limite para concluir esta tarefa é dia 31/07/2021, as 23h59min.
+  git chekcout -b b1
+  git chekcout -b b2
+  git add --all
+  git commit -m "primeiro commit"
+  git add --all
+  git commit -m "segundo commit"
+  git checkout b1
+  git merge b2
+  git branch -d b2
 
 </DIV/>
