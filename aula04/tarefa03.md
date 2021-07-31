@@ -5,58 +5,110 @@ Responda as questões abaixo (exercite os comandos do git correspondentes). Lemb
 
 
 1. Qual o comando para obter a versão instalada do Git?
+  ```
   git --version
+  ```
 2. Qual o efeito da execução de cada um dos comandos abaixo?
   a. git help
+  ```
   abre lista de comandos do git
+  ```
   b. git help checkout
+  ```
   abre uma pagina web de ajuda sobre o comando checkout
+  ```
   c. git help merge
+  ```
   abre uma pagina web de ajuda sobre o comando merge
+  ```
   d. git init
+  ```
   cria um repositorio local no diretorio atual
+  ```
   e. git add --all
+  ```
   adiciona todos os arquivos do diretorio ao versionamento 
+  ```
   f. git add -u 
+  ```
   atualiza todos os arquivos versionados no diretorio porem nao adiciona novos.
+  ```
   g. git config -l
+  ```
   lista todas as variaveis do arquivo config e seus valore atuais
+  ```
   h. git mv a.txt b.txt
+  ```
   altera o nome de um arquivo de a para b.
+  ```
   i. git reset --hard
+  ```
   reseta o diretorio atual
+  ```
   j. git log -27
+  ```
   mostra os ultimos 27 commits
+  ```
 3. O fluxo “clássico” de interação com o Git é algo como “alterar um ou mais arquivos”, “acrescentar essas mudanças para serem contemplados no próximo commit” e, finalmente, executar um “commit”. Quais os comandos necessários para realizar os dois últimos “passos” desse fluxo?
-  `git add` e `git commit`
+  ```
+  git add e git commit
+  ```
 4. Qual o comando deve ser executado para identificar o que foi alterado desde o último “commit”?
-  `git diff`
+  ```
+  git diff
+  ```
 5. Em um dado repositório, arquivos simplesmente copiados para lá, ou seja, _untracked_, podem ser exibidos/identificados com que comando?
-  `git status -u`
+  ```
+  git status -u
+  ```
 6. Qual o comando para efetuar um _commit_?
-  `git commit`
+  ```
+  git commit
+  ```
 7. Qual o comando que devemos empregar para descartar mudanças ocorridas no arquivo teste.txt, por exemplo? 
-  `git reset teste.txt`
+  ```
+  git reset teste.txt
+  ```
 8. O que deve ser feito para que um determinado diretório do seu repositório seja ignorado pelo Git? Faça uma busca por **.gitignore**.
+  ```
   apenas adicione o nome do arquivo em gitignore
+  ```
 9. O que acontece se o seu repositório local for acidentalmente removido?
+  ```
   faça um clone do repositório remoto
+  ```
 10. Como clonar um repositório remoto?
-  `git clone <url>`
+  ```
+  git clone <url>
+  ```
 11. Em alguns cenários **git log** pode produzir extensos resultados. Se houver interesse em visualizar o histórico de um repositório, onde cada mudança é fornecida exatamente em uma única linha, qual o comando que deve ser empregado?
+  ```
   git log --pretty=oneline
+  ```
 12. Em qual arquivo o Git armazena informações de configuração empregadas por usuário?
-  `.git/config`
+  ```
+  .git/config
+  ```
 13. Qual o comando para criar um repositório local?
-  `git init`
+  ```
+  git init
+  ```
 14. Qual o nome do diretório criado pelo Git quando se executa o comando **git init**?
-  `.git`
+  ``` 
+  .git
+  ```
 15. Qual o comando para adicionar todos os arquivos modificados? (Aqueles para os quais **git status** identificam como **modified**?)
-  `git commit`
+  ```
+  git commit
+  ```
 16. O Git faz uso do valor de hash conhecido por SHA1. O que isto significa? Qual o propósito? O que é SHA1?
+  ```
   SHA1 é uma função de dispersão criptografia hash que criptografa os dados do repositorio padrão
+  ```
 17. Qual a palavra para indicar o último _commit_ em vez do valor de hash SHA1 correspondente?
-  `git log -1`
+  ```
+  git log -1
+  ```
 18. Quando se cria dois arquivos usando um editor de texto qualquer e, na sequência, executamos o comando **git add -u**, os dois arquivos criados passam de _untracked_ para _new file_?
   Não, o comando -u faz a atualização dos arquivos já traqueados ou versionados
 19. Qual o efeito da execução dos dois comandos abaixo, nesta ordem, em um dado repositório?
