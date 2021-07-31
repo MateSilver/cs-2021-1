@@ -95,8 +95,6 @@ Responda as questões abaixo (exercite os comandos do git correspondentes). Lemb
   um funciona antes do commit e outro o checkout funciona antes de commitar, no local
 35. Veja como interpretar o resultado de git diff [aqui](https://medium.com/therobinkim/how-to-read-a-git-diff-6c87a9dc47c5). Execute, em um dos seus projetos, o comando **git diff HEAD~1 HEAD** e certifique-se de que entende o resultado apresentado.
 
-
-
 INSTRUÇÕES:
 
 1. No seu repositório pessoal, criar a pasta aula04.
