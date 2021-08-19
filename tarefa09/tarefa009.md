@@ -38,3 +38,4 @@
 5. Verificar quais são as sugestões de alteração/melhoria apontadas pelo _sonarlint_ para cada um dos programas implementados;
 6. Efetuar as correções apontadas e coommitar novamente;
 7. Esta tarefa é individual e deverá ser entregue até as 18hs do dia 20/08/2021.
+*Obs.: não foram notadas pelo SONAR sugestões para melhoria*
