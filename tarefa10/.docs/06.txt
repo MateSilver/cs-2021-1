@@ -1,0 +1,4 @@
+6. Implementar um programa que:
+  * leia um número inteiro
+  * e imprima o seu antecessor e seu sucessor.
+Exemplo: entrada == 5 -> antecessor == 4, sucessor == 6
