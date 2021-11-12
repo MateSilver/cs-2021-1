@@ -1,0 +1,3 @@
+3. Implementar um programa que:
+  * Leia o valor de um saldo e imprima-o com reajuste de 15%.
+Exemplo: saldo == 100 -> reajuste impresso == 115.
